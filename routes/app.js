@@ -3,6 +3,7 @@ import Nav from './nav'
 import Home from '../components/home'
 import Fruits from '../components/fruits'
 import Veggies from '../components/veggies'
+import Contact from '../components/contact'
 
 export default class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ export default class App extends React.Component {
         <Home />
         <Fruits />
         <Veggies />
+        <Contact />
       </div>
     );
   }

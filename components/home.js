@@ -9,15 +9,14 @@ var myStyle = {
   	// backgroundImage: url(../public/images/???.jpg) 
 }
 
-export default class Turtles extends React.Component {
+export default class Home extends React.Component {
 
   render() {
   	return (
 
       <div id="home" class="container-fluid" style={myStyle}>
         <h1>Home</h1>
-        <p>The quick brown fox jumps over the lazy dog. God yzal eht revo spmuj xof nworb kciuq eht.</p>
-        <p>The quick brown fox jumps over the lazy dog. God yzal eht revo spmuj xof nworb kciuq eht.</p>
+        <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
       </div>
     );
   }

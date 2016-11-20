@@ -5,7 +5,7 @@ var myStyle = {
   	paddingTop: "50px",
   	height: "700px",
   	color: "#fff",
-  	backgroundColor: "#505050"
+  	backgroundColor: "blue"
 }
 
 export default class Veggies extends React.Component {
@@ -14,7 +14,7 @@ export default class Veggies extends React.Component {
   	return (
       <div id="veggies" class="container-fluid" style={myStyle}>
         <h1>Vegetables</h1>
-        <p>The quick brown fox jumps over the lazy dog. God yzal eht revo spmuj xof nworb kciuq eht.</p>
+        <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
       </div>
     );
   }
