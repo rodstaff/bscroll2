@@ -1,0 +1,6 @@
+body {
+      position: relative;
+  }
+  #home {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #users {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #turtles {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
