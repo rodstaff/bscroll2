@@ -18,8 +18,8 @@ export default class Nav extends React.Component {
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="#home">Home</a></li>
-        <li><a href="#users">Famous People</a></li>
-        <li><a href="#turtles">Mutant Turtles</a></li>
+        <li><a href="#fruits">Fruits</a></li>
+        <li><a href="#veggies">Vegetables</a></li>
       </ul>
     </div>
   </nav>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Nav from './nav'
 import Home from '../components/home'
-import Users from '../components/users'
-import Turtles from '../components/turtles'
+import Fruits from '../components/fruits'
+import Veggies from '../components/veggies'
 
 export default class App extends React.Component {
   render() {
@@ -10,8 +10,8 @@ export default class App extends React.Component {
       <div>
         <Nav />
         <Home />
-        <Users />
-        <Turtles />
+        <Fruits />
+        <Veggies />
       </div>
     );
   }

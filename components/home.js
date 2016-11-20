@@ -6,6 +6,7 @@ var myStyle = {
   	height: "1000px",
   	color:  "#000",
   	backgroundColor: "#66b3ff"
+  	// backgroundImage: url(../public/images/???.jpg) 
 }
 
 export default class Turtles extends React.Component {
