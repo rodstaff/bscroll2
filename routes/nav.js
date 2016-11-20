@@ -1,5 +1,8 @@
 import React from 'react'
 
+var myStyle = {
+    color:  "#fff",
+}
 export default class Nav extends React.Component {
   render() {
     return (
@@ -8,7 +11,7 @@ export default class Nav extends React.Component {
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="">MENU</span>
+          <span class="" style={myStyle}>MENU</span>
         </button>
       </div>
     </div>

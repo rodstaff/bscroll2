@@ -1,12 +1,20 @@
 import React from 'react'
 
+var myStyle = {
+	fontFamily: "Dosis",
+  	paddingTop: "50px",
+  	height: "700px",
+  	color: "#fff",
+  	backgroundColor: "#ff9800"
+}
+
 export default class Turtles extends React.Component {
+
   render() {
   	return (
-      <div id="turtles" class="container-fluid">
-        <h1>Home</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <div id="turtles" class="container-fluid" style={myStyle}>
+        <h1>Turtles</h1>
+        <p>The quick brown fox jumps over the lazy dog. God yzal eht revo spmuj xof nworb kciuq eht.</p>
       </div>
     );
   }

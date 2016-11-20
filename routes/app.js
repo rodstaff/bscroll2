@@ -1,6 +1,5 @@
 import React from 'react'
 import Nav from './nav'
-import Sections from './sections'
 import Home from '../components/home'
 import Users from '../components/users'
 import Turtles from '../components/turtles'
