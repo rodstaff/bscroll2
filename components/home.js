@@ -5,7 +5,7 @@ var myStyle = {
   	paddingTop: "50px",
   	height: "1000px",
   	color:  "#000",
-  	backgroundColor: "#66b3ff"
+  	backgroundColor: "blue"
   	// backgroundImage: url(../public/images/???.jpg) 
 }
 

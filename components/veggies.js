@@ -5,7 +5,7 @@ var myStyle = {
   	paddingTop: "50px",
   	height: "700px",
   	color: "#fff",
-  	backgroundColor: "blue"
+  	backgroundColor: "#66b3ff"
 }
 
 export default class Veggies extends React.Component {
