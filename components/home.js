@@ -4,8 +4,8 @@ var myStyle = {
 	fontFamily: "Dosis",
   	paddingTop: "50px",
   	height: "1000px",
-  	color:  "#fff",
-  	backgroundColor: "#1E88E5"
+  	color:  "#000",
+  	backgroundColor: "#66b3ff"
 }
 
 export default class Turtles extends React.Component {

@@ -5,7 +5,7 @@ var myStyle = {
   	paddingTop: "50px",
   	height: "700px",
   	color: "#fff",
-  	backgroundColor: "#ff9800"
+  	backgroundColor: "#505050"
 }
 
 export default class Turtles extends React.Component {

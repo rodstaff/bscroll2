@@ -4,8 +4,8 @@ var myStyle = {
 	fontFamily: "Dosis",
   	paddingTop: "50px",
   	height: "500px",
-  	color: "#fff",
-  	backgroundColor: "#79d2a6"
+  	color: "#000",
+  	backgroundColor: "#FFCC00"
 }
 
 export default class Users extends React.Component {
