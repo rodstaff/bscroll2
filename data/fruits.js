@@ -21,43 +21,43 @@ export default function() {
       img:  ""
     },
     {
-      id: 3,
+      id: 4,
       cname: "Jackfruit",
       lname: "Artocarpus heterophyllus",
       img:  ""
     },
     {
-      id: 4,
+      id: 5,
       cname: "Lemon",
       lname: "Citrus limonium",
       img:  ""
     },
     {
-      id: 5,
+      id: 6,
       cname: "Mango",
       lname: "Mangifera indica",
       img:  ""
     },
     {
-      id: 6,
+      id: 7,
       cname: "Orange",
       lname: "Citrus aurantium",
       img:  ""
     },
     {
-      id: 7,
+      id: 8,
       cname: "Papaya",
       lname: "Carica papaya",
       img:  ""
     },
     {
-      id: 8,
+      id: 9,
       cname: "Pineapple",
       lname: "Ananus sativus",
       img:  ""
     },
     {
-      id: 9,
+      id: 10,
       cname: "Pomegranate",
       lname: "Punica granatum",
       img:  ""
