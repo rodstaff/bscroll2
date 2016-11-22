@@ -1,9 +1,9 @@
 import React from 'react'
-import Nav from './nav'
-import Home from '../components/home'
-import Fruits from '../components/fruits'
-import Veggies from '../components/veggies'
-import Contact from '../components/contact'
+import Nav from '../routes/nav'
+import Home from '../sections/home'
+import Fruits from '../sections/fruits'
+import Veggies from '../sections/veggies'
+import Contact from '../sections/contact'
 import FruitsData from '../data/fruits'
 import VeggiesData from '../data/veggies'
 
@@ -20,14 +20,14 @@ export default class App extends React.Component {
       <div>
         <Nav />
         <Home />
-        <Fruits />
-        <Veggies />
+        <Fruits fruits={this.state.fruits}/>
+        <Veggies veggies={this.state.veggies}/>
         <Contact />
       </div>
     );
   }
 }
 App.defaultProps = {
-  fruits: FruitsData,
-  veggies: VeggiesData
+  fruits: FruitsData(),
+  veggies: VeggiesData()
 }
