@@ -1,5 +1,5 @@
 {
-  "name": "scroll",
+  "name": "bscroll",
   "version": "1.0.0",
   "description": "",
   "main": "./routes/index.js",
