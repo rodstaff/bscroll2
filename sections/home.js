@@ -16,9 +16,9 @@ export default class Home extends React.Component {
   	return (
 
       <div id="home" class="container-fluid" style={myStyle}>
-        <h1>Home</h1>
+        <h1>A convenient place to buy your seeds online!</h1>
         <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
-        <img src={Pic} width="478px"/>
+        <img src={Pic} width="600px"/>
       </div>
     );
   }

@@ -11,7 +11,8 @@ var myStyle = {
 
 export default class Fruits extends React.Component {
   render() {
-    const showFruits = this.props.fruits.map(fruit => <FruitItem key={fruit.id} cname={fruit.cname} lname={fruit.lname}/> );
+    const showFruits = this.props.fruits.map(fruit => 
+      <FruitItem key={fruit.id} cname={fruit.cname} lname={fruit.lname} price={fruit.price} isActive={fruit.isActive}/> );
   	return (
       <div id="fruits" class="container-fluid" style={myStyle}>
         <div class="row">
