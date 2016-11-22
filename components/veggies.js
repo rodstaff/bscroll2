@@ -19,3 +19,9 @@ export default class Veggies extends React.Component {
     );
   }
 }
+Veggies.propTypes = {
+  veggies: React.PropTypes.array.isRequired
+}
+Veggies.defaultProps = {
+  veggies: []
+}

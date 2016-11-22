@@ -4,8 +4,8 @@ import Home from '../components/home'
 import Fruits from '../components/fruits'
 import Veggies from '../components/veggies'
 import Contact from '../components/contact'
-import Fruits from '../data/fruits'
-import Veggies from '../data/veggies'
+import FruitsData from '../data/fruits'
+import VeggiesData from '../data/veggies'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -28,6 +28,6 @@ export default class App extends React.Component {
   }
 }
 App.defaultProps = {
-  fruits: Fruits,
-  veggies: Veggies
+  fruits: FruitsData,
+  veggies: VeggiesData
 }

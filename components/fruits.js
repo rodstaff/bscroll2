@@ -19,3 +19,9 @@ export default class Fruits extends React.Component {
     );
   }
 }
+Fruits.propTypes = {
+  fruits: React.PropTypes.array.isRequired
+}
+Fruits.defaultProps = {
+  fruits: []
+}

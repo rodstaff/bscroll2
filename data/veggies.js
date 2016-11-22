@@ -1,4 +1,4 @@
-import Pic1 from "../public/images/veggies/pic1.jpg"
+// import Pic1 from "../public/images/veggies/pic1.jpg"
 
 export default function() {
   return [
