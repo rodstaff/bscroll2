@@ -7,7 +7,7 @@ export default function() {
       cname: "Apple",
       lname: "Pyrus malus",
       price: 5.31,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -15,39 +15,39 @@ export default function() {
       cname: "Banana",
       lname: "Musa paradisicum",
       price: 4.39,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
       id: 3,
-      cname: "Guava",
-      lname: "Psidium guava",
-      price: 4.98,
-      isActive: false,
+      cname: "Cantaloupe",
+      lname: "Cucumis melo",
+      price: 4.78,
+      isChecked: false,
       img:  ""
     },
     {
       id: 4,
-      cname: "Jackfruit",
-      lname: "Artocarpus heterophyllus",
-      price: 5.67,
-      isActive: false,
+      cname: "Guava",
+      lname: "Psidium guava",
+      price: 4.98,
+      isChecked: false,
       img:  ""
     },
     {
       id: 5,
-      cname: "Lemon",
-      lname: "Citrus limonium",
-      price: 6.12,
-      isActive: false,
+      cname: "Jackfruit",
+      lname: "Artocarpus heterophyllus",
+      price: 5.67,
+      isChecked: false,
       img:  ""
     },
     {
       id: 6,
-      cname: "Mango",
-      lname: "Mangifera indica",
-      price: 3.45,
-      isActive: false,
+      cname: "Lychee",
+      lname: "Litchi chinensis",
+      price: 6.12,
+      isChecked: false,
       img:  ""
     },
     {
@@ -55,7 +55,7 @@ export default function() {
       cname: "Orange",
       lname: "Citrus aurantium",
       price: 4.56,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -63,7 +63,7 @@ export default function() {
       cname: "Papaya",
       lname: "Carica papaya",
       price: 5.13,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -71,7 +71,7 @@ export default function() {
       cname: "Pineapple",
       lname: "Ananus sativus",
       price: 4.97,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -79,7 +79,7 @@ export default function() {
       cname: "Pomegranate",
       lname: "Punica granatum",
       price: 3.97,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -87,7 +87,7 @@ export default function() {
       cname: "Tomato",
       lname: "Lycopersican esculentum",
       price: 4.39,
-      isActive: false,
+      isChecked: false,
       img:  ""
     },
     {
@@ -95,7 +95,7 @@ export default function() {
       cname: "Watermelon",
       lname: "Citrullus vulgaris",
       price: 5.27,
-      isActive: false,
+      isChecked: false,
       img:  ""
     }
   ];

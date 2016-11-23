@@ -29,6 +29,10 @@ export default class App extends React.Component {
     );
   }
 }
+App.PropTypes = {
+  fruits: React.PropTypes.array.isRequired,
+  veggies: React.PropTypes.array.isRequired
+}
 App.defaultProps = {
   fruits: FruitsData(),
   veggies: VeggiesData()

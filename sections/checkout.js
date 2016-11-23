@@ -9,7 +9,7 @@ var myStyle = {
 }
 
 export default class Checkout extends React.Component {
-
+//  const listFruits = this.props.fruits.find(fruit => fruit.isChecked === true).map(fruit => <BuyFruit {fruit.cname} {fruit.price}>);
   render() {
   	return (
       <div id="checkout" class="container-fluid" style={myStyle}>
