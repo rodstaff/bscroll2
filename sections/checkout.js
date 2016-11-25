@@ -1,29 +1,44 @@
 import React from 'react'
+import BuyFruit from '../components/buy-fruit'
 
 var myStyle = {
-	fontFamily: "Dosis",
-  	paddingTop: "50px",
-  	height: "300px",
-  	color: "#000",
-  	backgroundColor: "#79d2a6"
+  fontFamily: "Dosis",
+    paddingTop: "50px",
+    height: "500px",
+    color: "#000",
+    backgroundColor: "#79d279"
 }
 
 export default class Checkout extends React.Component {
-//  const listFruits = this.props.fruits.find(fruit => fruit.isChecked === true).map(fruit => <BuyFruit {fruit.cname} {fruit.price}>);
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     fruits: this.props.fruits
+  //   };
+  // }
   render() {
-  	return (
+    const listFruits = this.props.fruits.filter(fruit => fruit.isChecked === true)
+      .map(fruit => <BuyFruit key={fruit.id} cname={fruit.cname} price={fruit.price}/> );
+    console.log(this.props);
+    return (
       <div id="checkout" class="container-fluid" style={myStyle}>
-        <h1>Checkout</h1>
-        <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <h1>Checkout</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          {listFruits}
+        </div>
       </div>
     );
   }
 }
 Checkout.propTypes = {
-  fruits: React.PropTypes.array.isRequired,
-  veggies: React.PropTypes.array.isRequired
+  fruits: React.PropTypes.array
 }
 Checkout.defaultProps = {
-  fruits: [],
-  veggies: []
+  fruits: []
 }

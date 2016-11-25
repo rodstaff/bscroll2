@@ -23,7 +23,7 @@ export default class App extends React.Component {
         <Home />
         <Fruits fruits={this.state.fruits}/>
         <Veggies veggies={this.state.veggies}/>
-        <Checkout fruits={this.state.fruits} veggies={this.state.veggies}/>
+        
         <Contact />
       </div>
     );
