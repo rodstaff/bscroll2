@@ -1,5 +1,5 @@
 import React from 'react'
-import FruitItem from '../components/fruit-item'
+import FruitItems from '../components/fruit-items'
 import Checkout from './checkout'
 
 var myStyle = {
@@ -13,7 +13,7 @@ var myStyle = {
 export default class Fruits extends React.Component {
   render() {
     const showFruits = this.props.fruits.map(fruit => 
-      <FruitItem key={fruit.id} cname={fruit.cname} lname={fruit.lname} price={fruit.price} isChecked={fruit.isChecked}/> );
+      <FruitItems key={fruit.id} cname={fruit.cname} lname={fruit.lname} price={fruit.price} isChecked={fruit.isChecked}/> );
   	return (
       <div>
       <div id="fruits" class="container-fluid" style={myStyle}>
@@ -28,7 +28,8 @@ export default class Fruits extends React.Component {
           {showFruits}
         </div>
       </div>
-        <Checkout fruits={this.props.fruits} />
+        <Checkout fruits={this.props.newFruitsList} />
+        {console.log(this.props.newFruitsList)}
       </div>
     );
   }

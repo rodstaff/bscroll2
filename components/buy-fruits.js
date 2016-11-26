@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class BuyFruit extends React.Component { 
+export default class BuyFruits extends React.Component { 
 
   render() {
   	const { cname, price } = this.props;
@@ -12,11 +12,11 @@ export default class BuyFruit extends React.Component {
     );
   }
 }
-BuyFruit.propTypes = {
+BuyFruits.propTypes = {
   cname: React.PropTypes.string,
   price: React.PropTypes.number
 }
-BuyFruit.defaultProps = {
+BuyFruits.defaultProps = {
   cname: '',
   price: 0
 }

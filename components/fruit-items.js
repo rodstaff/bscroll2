@@ -1,6 +1,9 @@
 import React from 'react'
 
-export default class FruitItem extends React.Component { 
+var newFruitsList = [],
+    testNumber = 0;
+
+export default class FruitItems extends React.Component { 
   constructor(props) {
   	super(props);
   	this.state ={
@@ -10,7 +13,7 @@ export default class FruitItem extends React.Component {
   toggleChange() {
   	this.setState({
       isChecked: !this.state.isChecked
-  	}, function() { console.log(this.state) }
+  	}//, function() { console.log(this.state) }
   	);
   }
   render() {
@@ -23,17 +26,19 @@ export default class FruitItem extends React.Component {
         <div class="checkbox">
           <label><input type="checkbox" checked={this.state.isChecked} onChange={this.toggleChange.bind(this)}/>Buy</label>
         </div>
+        {this.state.isChecked ? newFruitsList.push({cname:cname, price: price}) : testNumber=0}
+        {this.props.newFruitsList}{console.log(newFruitsList)}
       </div>
     );
   }
 }
-FruitItem.propTypes = {
+FruitItems.propTypes = {
   cname: React.PropTypes.string,
   lname: React.PropTypes.string,
   price: React.PropTypes.number,
   isChecked: React.PropTypes.bool
 }
-FruitItem.defaultProps = {
+FruitItems.defaultProps = {
   cname: '',
   lname: '',
   price: 0,

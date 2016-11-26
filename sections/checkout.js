@@ -1,5 +1,5 @@
 import React from 'react'
-import BuyFruit from '../components/buy-fruit'
+import BuyFruits from '../components/buy-fruits'
 
 var myStyle = {
   fontFamily: "Dosis",
@@ -10,15 +10,15 @@ var myStyle = {
 }
 
 export default class Checkout extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     fruits: this.props.fruits
-  //   };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      fruits: this.props.fruits
+    };
+  }
   render() {
-    const listFruits = this.props.fruits.filter(fruit => fruit.isChecked === true)
-      .map(fruit => <BuyFruit key={fruit.id} cname={fruit.cname} price={fruit.price}/> );
+    const listFruits = this.state.fruits.filter(fruit => fruit.isChecked === true)
+      .map(fruit => <BuyFruits key={fruit.id} cname={fruit.cname} price={fruit.price}/> );
     console.log(this.props);
     return (
       <div id="checkout" class="container-fluid" style={myStyle}>
