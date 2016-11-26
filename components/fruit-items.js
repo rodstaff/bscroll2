@@ -18,15 +18,22 @@ export default class FruitItems extends React.Component {
   }
   render() {
   	const { cname, lname, price, isChecked } = this.props;
+    const myStyle = {
+      border: "1px double black",
+      borderRadius: 15,
+      marginLeft: 0,
+      marginRight: 0,
+      marginBottom: 2
+    };
     return (
-      <div class="col-xs-3 text-center">
+      <div class="col-xs-3 text-center" style={myStyle}>
         <h4>{cname}</h4>
         <h5><em>{lname}</em></h5>
         <h5>Price:&nbsp;&nbsp;${price}</h5>
         <div class="checkbox">
           <label><input type="checkbox" checked={this.state.isChecked} onChange={this.toggleChange.bind(this)}/>Buy</label>
         </div>
-        {this.state.isChecked ? newFruitsList.push({cname:cname, price: price}) : testNumber=0}
+        {"picked in order = "} {this.state.isChecked ? newFruitsList.push({cname:cname, price: price}) : testNumber}
         {this.props.newFruitsList}{console.log(newFruitsList)}
       </div>
     );

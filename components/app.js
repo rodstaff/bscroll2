@@ -22,8 +22,7 @@ export default class App extends React.Component {
         <Nav />
         <Home />
         <Fruits fruits={this.state.fruits}/>
-        <Veggies veggies={this.state.veggies}/>
-        
+        <Checkout/>      
         <Contact />
       </div>
     );
