@@ -1,14 +1,14 @@
 import React from 'react'
 import Pic from '../public/images/fruitsVegs.jpeg'
-//import Pic from '../public/images/backImage'
 
-var myStyle = {
-	fontFamily: "Dosis",
-  	paddingTop: "50px",
-  	height: "1000px",
-  	color:  "#000",
-  	backgroundColor: "blue",
-//    backgroundImage: url('') 
+let myStyle = {
+	  fontFamily: "Dosis",
+  	paddingTop: "300px",
+  	height: "700px",
+  	color:  "#fff",
+    backgroundImage: `url(${Pic})`,
+    backgroundSize: 'cover'
+
 }
 
 export default class Home extends React.Component {
@@ -16,9 +16,12 @@ export default class Home extends React.Component {
   	return (
 
       <div id="home" class="container-fluid" style={myStyle}>
-        <h1>A convenient place to buy your seeds online!</h1>
-        <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
-        <img src={Pic} width="600px"/>
+        <div class="text-center home">
+
+          <h1>A convenient place to buy your seeds online!</h1>
+          <p>God yzal eht revo spmuj xof nworb kciuq eht.&nbsp;&nbsp;The quick brown fox jumps over the lazy dog.</p>
+
+        </div>
       </div>
     );
   }

@@ -21,7 +21,10 @@ module.exports = {
         query: {
           presets: ['react', 'es2015'],
           plugins: [
-            'react-html-attrs'
+            'react-html-attrs',
+     //       'transform-class-properties', 
+     //       'transform-decorators-legacy',
+            'transform-object-rest-spread'
           ]
         }
       },

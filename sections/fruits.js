@@ -3,9 +3,9 @@ import FruitItems from '../components/fruit-items'
 import Checkout from './checkout'
 
 var myStyle = {
-	fontFamily: "Dosis",
+	  fontFamily: "Dosis",
   	paddingTop: "50px",
-  	height: "680px",
+  	height: "750px",
   	color: "#000",
   	backgroundColor: "#FFCC00"
 }
@@ -13,7 +13,7 @@ var myStyle = {
 export default class Fruits extends React.Component {
   render() {
     const showFruits = this.props.fruits.map(fruit => 
-      <FruitItems key={fruit.id} cname={fruit.cname} lname={fruit.lname} price={fruit.price} isChecked={fruit.isChecked}/> );
+      <FruitItems addNew={this.props.addNew} buyFruits={this.props.buyFruits} key={fruit.id} id={fruit.id} cname={fruit.cname} lname={fruit.lname} price={fruit.price} isChecked={fruit.isChecked}/> );
   	return (
       <div id="fruits" class="container-fluid" style={myStyle}>
         <div class="row">
@@ -31,8 +31,11 @@ export default class Fruits extends React.Component {
   }
 }
 Fruits.propTypes = {
-  fruits: React.PropTypes.array.isRequired
+  fruits: React.PropTypes.array.isRequired,
+  buyFruits: React.PropTypes.array,
+  addNew: React.PropTypes.func
 }
 Fruits.defaultProps = {
-  fruits: []
+  fruits: [],
+  buyFruits: []
 }

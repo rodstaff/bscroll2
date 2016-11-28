@@ -10,16 +10,11 @@ var myStyle = {
 }
 
 export default class Checkout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      fruits: this.props.fruits
-    };
-  }
   render() {
-    const listFruits = this.state.fruits.filter(fruit => fruit.isChecked === true)
-      .map(fruit => <BuyFruits key={fruit.id} cname={fruit.cname} price={fruit.price}/> );
-    console.log(this.props);
+    const fruits = this.props.buyFruits;
+    {console.log(fruits)}
+    const listFruits = fruits.map(fruit => <BuyFruits key={fruit.id} id={fruit.id} cname={fruit.cname} price={fruit.price}/> );
+    {console.log(listFruits)}
     return (
       <div id="checkout" class="container-fluid" style={myStyle}>
         <div class="row">
@@ -37,8 +32,10 @@ export default class Checkout extends React.Component {
   }
 }
 Checkout.propTypes = {
-  fruits: React.PropTypes.array
+  fruits: React.PropTypes.array,
+  buyFruits: React.PropTypes.array
 }
 Checkout.defaultProps = {
-  fruits: []
+  fruits: [],
+  buyFruits: []
 }
