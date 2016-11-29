@@ -11,18 +11,6 @@ const myStyle = {
 };
 
 export default class FruitItems extends React.Component { 
-  constructor(props) {
-  	super(props);
-  	this.state ={
-  	  isChecked: this.props.isChecked
-  	}
-  }
-  toggleChange() {
-  	this.setState({
-      isChecked: !this.state.isChecked
-  	}//, function() { console.log(this.state) }
-  	);
-  }
   render() {
     const { id, cname, lname, price, isChecked, buyFruits } = this.props;
     return (
@@ -30,11 +18,6 @@ export default class FruitItems extends React.Component {
         <h4>{cname}</h4>
         <h5><em>{lname}</em></h5>
         <h5>Price:&nbsp;&nbsp;${price}</h5>
-        <div class="checkbox">
-          <label><input type="checkbox" checked={this.state.isChecked} onChange={this.toggleChange.bind(this)}/>Buy</label>
-        </div>
-        {"picked in order = "} {this.state.isChecked ? buyFruits.push({id: id, cname: cname, price: price}) : testNumber}
-        {console.log(buyFruits)} 
       </div>
     );
   }
@@ -44,7 +27,6 @@ FruitItems.propTypes = {
   cname: React.PropTypes.string,
   lname: React.PropTypes.string,
   price: React.PropTypes.number,
-  isChecked: React.PropTypes.bool,
   addNew: React.PropTypes.func,
   buyFruits: React.PropTypes.array
 }
@@ -53,6 +35,5 @@ FruitItems.defaultProps = {
   cname: '',
   lname: '',
   price: 0,
-  isChecked: false,
   buyFruits: []
 }

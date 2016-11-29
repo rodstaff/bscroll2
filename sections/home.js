@@ -8,7 +8,6 @@ let myStyle = {
   	color:  "#fff",
     backgroundImage: `url(${Pic})`,
     backgroundSize: 'cover'
-
 }
 
 export default class Home extends React.Component {

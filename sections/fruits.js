@@ -19,7 +19,7 @@ export default class Fruits extends React.Component {
         <div class="row">
           <div class="col-lg-12">
             <div class="text-center">
-              <h1>Fruits</h1>
+              <h1>Fruit</h1>
             </div>
           </div>
         </div>
